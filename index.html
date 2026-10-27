@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DevOps and Cloud Engineering portfolio — Linux, containers, Kubernetes, CI/CD, automation, and monitoring.">
+  <meta name="theme-color" content="#0b0f0d">
+  <title>Sabari Dev | DevOps & Cloud Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Sabari Dev home"><span class="prompt">~/</span> sabari<span class="accent">.dev</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+        <a class="nav-resume" href="assets/resume.pdf" target="_blank" rel="noopener">resume ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR DEVOPS / CLOUD OPPORTUNITIES</p>
+        <h1>Hi, I'm <span class="accent">Sabari Dev.</span><br><span class="muted">I build, automate,</span><br>and operate systems.</h1>
+        <p class="hero-description">Aspiring DevOps / Cloud Engineer focused on Linux, containerization, CI/CD, Kubernetes, infrastructure automation, and monitoring.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects"><span>./view-projects</span> <span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="#contact">get in touch</a>
+        </div>
+        <div class="hero-meta">
+          <span><span class="meta-icon">⌘</span> Linux-first mindset</span>
+          <span><span class="meta-icon">⌁</span> Automation enthusiast</span>
+        </div>
+      </div>
+      <div class="terminal-card" aria-label="Terminal showing an introduction">
+        <div class="terminal-top">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <span>sabari@portfolio: ~</span>
+          <span class="terminal-lock">●</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="terminal-green">sabari@dev</span>:<span class="terminal-blue">~</span>$ whoami</p>
+          <p class="terminal-output">DevOps &amp; Cloud Engineer (aspiring)</p>
+          <p><span class="terminal-green">sabari@dev</span>:<span class="terminal-blue">~</span>$ cat focus.txt</p>
+          <p class="terminal-output">Linux • Docker • Kubernetes<br>Jenkins • Ansible • Terraform<br>Prometheus • Grafana • AWS</p>
+          <p><span class="terminal-green">sabari@dev</span>:<span class="terminal-blue">~</span>$ systemctl status learning</p>
+          <p class="service-status"><span class="status-dot"></span> Active: continuously learning</p>
+          <p class="terminal-prompt"><span class="terminal-green">sabari@dev</span>:<span class="terminal-blue">~</span>$ <span class="cursor">▋</span></p>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section">↓ <span>scroll to explore</span></a>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading"><p class="section-index">01 / ABOUT</p><h2>A little about <span class="accent">me.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="lead">I’m a Computer Science student building practical skills in infrastructure, automation, and reliable deployments.</p>
+          <p>I enjoy learning how systems work beneath the surface—from Linux processes and networking to container runtimes, cluster networking, and CI/CD pipelines. I use hands-on labs to practice, troubleshoot, document, and improve.</p>
+          <p>This portfolio is a living record of that journey. The projects below describe practical labs and experiments; I aim to keep each description accurate to what I have actually built and tested.</p>
+        </div>
+        <div class="about-facts">
+          <div class="fact"><span class="fact-label">CURRENT FOCUS</span><strong>DevOps &amp; Cloud</strong></div>
+          <div class="fact"><span class="fact-label">FOUNDATION</span><strong>Linux · Networking · Git</strong></div>
+          <div class="fact"><span class="fact-label">LEARNING NEXT</span><strong>OpenShift · Platform Engineering</strong></div>
+          <div class="fact"><span class="fact-label">WORK STYLE</span><strong>Learn → Build → Debug → Document</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-heading"><p class="section-index">02 / TOOLKIT</p><h2>Tools I’m learning <span class="accent">&amp; using.</span></h2><p class="section-intro">A practical toolkit, growing through labs and projects. This is not a claim of expert-level proficiency in every tool.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card"><div class="skill-icon">⌘</div><h3>Operating Systems</h3><p>Linux · systemd · SSH · permissions · storage · networking</p><div class="skill-tags"><span>RHEL concepts</span><span>Kali Linux lab</span></div></article>
+          <article class="skill-card"><div class="skill-icon">▣</div><h3>Containers</h3><p>Docker · images · volumes · networks · Compose · containerd</p><div class="skill-tags"><span>Dockerfiles</span><span>Trivy</span></div></article>
+          <article class="skill-card"><div class="skill-icon">⎈</div><h3>Orchestration</h3><p>Kubernetes · Deployments · Services · StatefulSets · PVCs</p><div class="skill-tags"><span>kubeadm</span><span>Calico</span></div></article>
+          <article class="skill-card"><div class="skill-icon">⇄</div><h3>CI/CD &amp; Automation</h3><p>Jenkins pipelines · Git · Ansible · shell scripting</p><div class="skill-tags"><span>Jenkinsfile</span><span>Playbooks</span></div></article>
+          <article class="skill-card"><div class="skill-icon">⌁</div><h3>Observability</h3><p>Prometheus · Node Exporter · metrics · troubleshooting</p><div class="skill-tags"><span>PromQL basics</span><span>Monitoring</span></div></article>
+          <article class="skill-card"><div class="skill-icon">☁</div><h3>Cloud &amp; IaC</h3><p>AWS fundamentals · Terraform · infrastructure concepts</p><div class="skill-tags"><span>Terraform</span><span>S3 / IAM concepts</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading"><p class="section-index">03 / SELECTED WORK</p><h2>Labs &amp; <span class="accent">projects.</span></h2><p class="section-intro">Hands-on work that demonstrates the concepts I’ve been practicing. Replace the repository links with your actual GitHub URLs before publishing.</p></div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-top"><span class="project-number">PROJECT_01</span><span class="project-symbol">⎈</span></div>
+          <h3>Kubernetes Cluster Lab</h3>
+          <p>Built and troubleshot a kubeadm-based cluster with containerd and Calico. Practiced Deployments, Services, persistent volume claims, and pod-to-pod networking diagnostics.</p>
+          <ul class="project-points"><li>Inspected node and pod health</li><li>Investigated routes, endpoints, and BGP peering</li><li>Worked through workload connectivity issues</li></ul>
+          <div class="project-tags"><span>Kubernetes</span><span>Calico</span><span>Linux</span></div>
+          <a class="project-link" href="https://github.com/SabariDev18" target="_blank" rel="noopener">View repositories <span>↗</span></a>
+        </article>
+        <article class="project-card">
+          <div class="project-top"><span class="project-number">PROJECT_02</span><span class="project-symbol">⇄</span></div>
+          <h3>Jenkins CI Pipeline Lab</h3>
+          <p>Practiced pipeline-as-code for a Python application, including source checkout, build steps, parameterized runs, and container image vulnerability scanning with Trivy.</p>
+          <ul class="project-points"><li>Wrote and iterated on Jenkinsfiles</li><li>Explored build → scan → deploy stage ordering</li><li>Configured credentials and notifications in a lab</li></ul>
+          <div class="project-tags"><span>Jenkins</span><span>Docker</span><span>Trivy</span></div>
+          <a class="project-link" href="https://github.com/SabariDev18" target="_blank" rel="noopener">View repositories <span>↗</span></a>
+        </article>
+        <article class="project-card">
+          <div class="project-top"><span class="project-number">PROJECT_03</span><span class="project-symbol">⌁</span></div>
+          <h3>Prometheus Metrics Lab</h3>
+          <p>Set up Prometheus and Node Exporter in a local environment, configured scrape targets, and queried system metrics to understand the monitoring workflow.</p>
+          <ul class="project-points"><li>Verified exporter metrics endpoints</li><li>Configured Prometheus scrape jobs</li><li>Practiced basic PromQL queries</li></ul>
+          <div class="project-tags"><span>Prometheus</span><span>Node Exporter</span><span>PromQL</span></div>
+          <a class="project-link" href="https://github.com/SabariDev18" target="_blank" rel="noopener">View repositories <span>↗</span></a>
+        </article>
+        <article class="project-card">
+          <div class="project-top"><span class="project-number">PROJECT_04</span><span class="project-symbol">⚙</span></div>
+          <h3>Linux Administration Labs</h3>
+          <p>Practiced Linux administration tasks relevant to RHCSA preparation, including systemd services, logs, users and permissions, SSH, filesystems, and LVM concepts.</p>
+          <ul class="project-points"><li>Diagnosed services using systemctl and journalctl</li><li>Practiced file permissions and ACLs</li><li>Reviewed storage and boot troubleshooting</li></ul>
+          <div class="project-tags"><span>Linux</span><span>systemd</span><span>Shell</span></div>
+          <a class="project-link" href="https://github.com/SabariDev18" target="_blank" rel="noopener">View repositories <span>↗</span></a>
+        </article>
+      </div>
+      <p class="project-note"><span class="accent">NOTE //</span> These entries describe hands-on labs. Link each card to a repository with your notes, manifests, pipeline files, screenshots, and what you learned. Only claim results you can demonstrate.</p>
+    </section>
+
+    <section class="section section-alt" id="learning">
+      <div class="container learning-row">
+        <div><p class="section-index">04 / CURRENTLY EXPLORING</p><h2>Always improving<span class="accent">.</span></h2><p class="section-intro">My next step is to strengthen fundamentals and turn repeatable lab work into documented, reproducible projects.</p></div>
+        <div class="learning-list">
+          <div><span class="learning-check">[ ]</span><span>Package a small app and publish a clean Docker workflow</span></div>
+          <div><span class="learning-check">[ ]</span><span>Automate Linux configuration with Ansible</span></div>
+          <div><span class="learning-check">[ ]</span><span>Build a repeatable Kubernetes deployment with health checks</span></div>
+          <div><span class="learning-check">[ ]</span><span>Add CI/CD and monitoring documentation to a public repo</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container contact-section" id="contact">
+      <div class="section-heading"><p class="section-index">05 / CONTACT</p><h2>Let’s connect<span class="accent">.</span></h2><p class="section-intro">Interested in DevOps, Cloud, or infrastructure opportunities? Reach out through one of the links below.</p></div>
+      <div class="contact-panel">
+        <div><span class="contact-prompt">sabari@dev:~$</span> <span>echo "Let's build something reliable."</span></div>
+        <div class="contact-links">
+          <a href="mailto:YOUR_EMAIL@example.com" id="email-link"><span>✉</span> Email <b>↗</b></a>
+          <a href="https://github.com/SabariDev18" target="_blank" rel="noopener"><span>⌘</span> GitHub <b>↗</b></a>
+          <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/" target="_blank" rel="noopener"><span>in</span> LinkedIn <b>↗</b></a>
+        </div>
+      </div>
+      <p class="contact-foot">Built with HTML, CSS, JavaScript, Git, and GitHub Pages.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="brand" href="#home"><span class="prompt">~/</span> sabari<span class="accent">.dev</span></a><p>© <span id="year"></span> Sabari Dev <span class="muted">· Keep learning. Keep shipping.</span></p><a href="#home" class="back-top">back to top ↑</a></div>
+  </footer>
+</body>
+</html>
